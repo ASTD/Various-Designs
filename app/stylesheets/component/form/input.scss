@@ -1,0 +1,41 @@
+input[type="text"],
+input[type="email"],
+.input-text {
+    display: block;
+    @include font-size(12);
+    height: 27px;
+    line-height: 1;
+    padding: 5px 8px;
+    @include transition(all 0.3s ease);
+    width: 100%;
+
+    &:focus {
+        
+    }
+}
+
+.input-container {
+    display: inline-block;
+    @include clearfix;
+    padding-right: $search-button-width;
+    position: relative;
+    vertical-align: middle;
+    width: 320px;
+
+    .input-text {
+        border: 1px solid $cerulean;
+        border-right: 0;
+        border-radius: 5px 0 0 5px;
+        height: 27px;
+    }
+
+    input {
+        float: left;
+    }
+
+    .search-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

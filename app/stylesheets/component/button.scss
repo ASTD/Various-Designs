@@ -1,0 +1,91 @@
+button,
+.button {
+    border-radius: 5px;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    @include font-size(16);
+    font-weight: 600;
+    line-height: 1;
+    @include linear-gradient($light-orange, #E86336);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    @include transition(all 0.3s ease);
+    vertical-align: middle;
+
+    &:hover {
+        background: $light-orange;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px $orange;
+    }
+
+    &.full {
+        display: block;
+        padding: 10px 5px;
+    }
+
+    &.secondary {
+        @include linear-gradient($gray, $dark-gray);
+
+        &:hover {
+            background: $gray;
+            text-shadow: 1px 1px 1px $dark-gray;
+        }
+    }
+
+    &.pill {
+        margin-right: 10px;
+        padding: 10px 15px 10px 30px;
+        position: relative;
+
+        .color {
+            border-radius: 5px 0 0 5px;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 15px;
+        }
+    }
+
+    &.small {
+        @include font-size(13);
+        padding: 10px 15px;
+    }
+}
+
+.search-button {
+    @include hide-text;
+    @include sprite($search-button);
+}
+
+.color {
+    &.first {
+        @include linear-gradient($cerulean, $dark-cerulean);
+    }
+    &.second {
+        @include linear-gradient(#F6E175, #EDD360);
+    }
+    &.third {
+        @include linear-gradient(#479DB7, #1C6E91);
+    }
+    &.fourth {
+        @include linear-gradient(#BCBA4C, #979421);
+    }
+    &.fifth {
+        @include linear-gradient(#8968A3, #5C3B79);
+    }
+    &.sixth {
+        @include linear-gradient(#79A2CC, #4976B1);
+    }
+    &.seventh {
+        @include linear-gradient(#D2907D, #B75F4B);
+    }
+    &.eighth {
+        @include linear-gradient(#87D8F7, #55C0F3);
+    }
+    &.ninth {
+        @include linear-gradient(#AEBEE3, #8BA0D2);
+    }
+}

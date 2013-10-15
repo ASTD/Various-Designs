@@ -1,0 +1,12 @@
+.nav-breadcrumb {
+    @include font-size(12);
+    margin: 0 0 $page-v-rhythm;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.nav-filter {
+    margin: $page-padding*2 0;
+}

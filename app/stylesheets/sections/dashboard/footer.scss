@@ -1,0 +1,33 @@
+.dashboard-footer {
+    background: $white;
+    box-shadow: 0 3px 5px -2px $light-gray;
+    padding: 0 25px 25px;
+    position: relative;
+    z-index: 10;
+
+    table {
+        border-top: 1px dashed $light-gray;
+        text-align: center;
+        width: 100%;
+    }
+
+    th {
+        padding: 30px 5px 0;
+        vertical-align: bottom;
+        width: 25%;
+
+        h4 {
+            border-bottom: 1px solid $light-gray;
+            margin: 0;
+            padding: 0 0 5px;
+        }
+    }
+
+    td {
+        padding: 5px 5px;
+    }
+
+    .table-premier-content {
+        padding: 10px 5px;
+    }
+}

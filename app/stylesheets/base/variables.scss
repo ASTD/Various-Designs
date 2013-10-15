@@ -1,0 +1,60 @@
+// Colors
+// ---------------------------------------
+
+$red: #FF7373;
+$yellow: #FFC388;
+$green: #A1C960;
+
+$white: #FFF;
+$black: #000;
+
+$eggshell: #F1F2F3;
+
+$lighter-gray: #DEDEDE;
+$light-gray: #C7C7C7;
+$gray: #9E9E9E;
+$dark-gray: #707070;
+$darkest-gray: #333333;
+
+$faded-blue: #DFE7E9;
+$blue: #095386;
+$dark-blue: #053450;
+
+$seablue: #235A61;
+
+$lighter-cerulean: #E8F6F7;
+$light-cerulean: #C0E8EA;
+$cerulean: #95D9DB;
+$dark-cerulean: #5EC6CB;
+
+$faded-orange: #FBECE6;
+$light-orange: #FD714A;
+$orange: #DA6547;
+$dark-orange: #E66335;
+$darker-orange: #A63008;
+
+$faded-green: #DFE7E9;
+$green: #235961;
+
+$color-primary: $darkest-gray;
+$color-secondary: $blue;
+
+
+// Fonts
+// ---------------------------------------
+
+$font-stack: 'Arial', sans-serif;
+$font-primary: $font-stack;
+
+$font-secondary: 'Lato', $font-stack;
+
+
+// Misc
+// ---------------------------------------
+
+$page-nav-breakpoint: 950px;
+
+$page-v-rhythm: 20px;
+
+$page-padding: 10px;
+$page-width: 980px;

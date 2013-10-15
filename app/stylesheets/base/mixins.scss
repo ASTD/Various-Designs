@@ -1,0 +1,66 @@
+// CSS3
+// ---------------------------------------
+
+@mixin opacity ($value) {
+    opacity: $value;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value * 100})";
+    filter: alpha(opacity=#{$value * 100});
+    zoom: 1;
+}
+
+// Helpers
+// ---------------------------------------
+
+@mixin fallback-font () {
+    .ie8 & {
+        @content
+    }
+}
+
+@mixin filter ($value) {
+    -webkit-filter: $value;
+}
+
+@mixin font-size ($size: 16, $parentSize: 16) {
+    font-size: $size + 0px;
+    font-size: 0rem + $size/$parentSize;
+}
+
+@mixin image-replaced () {
+    color: transparent;
+    display: block;
+    @include font-size(1);
+    line-height: 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+@mixin size ($width, $height: $width) {
+    height: $height + 0px;
+    width: $width + 0px;
+}
+
+@mixin text-ellipsis () {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Styles
+// ---------------------------------------
+
+@mixin list-styles () {
+    li {
+        line-height: 1.3;
+        margin-top: 5px;
+
+        &:first-child {
+            margin-top: 5px;
+        }
+    }
+}
+
+@mixin image-styles () {
+    border: 5px solid $white;
+    outline: 1px solid $lighter-gray;
+}

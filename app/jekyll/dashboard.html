@@ -1,0 +1,41 @@
+---
+layout: default
+title: Membership Dashboard
+wrapper: dashboard
+---
+
+<header class="page-header">
+    <div class="container">
+        <nav class="nav-breadcrumb">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>&gt;</li>
+                <li><a href="#">Members</a></li>
+                <li>&gt;</li>
+                <li>Member Dashboard</li>
+            </ul>
+        </nav>
+        <h1>ASTD Member Center</h1>
+    </div>
+</header>
+
+<section class="section dashboard-container">
+    <div class="container">
+        {% include dashboard/_member-dashboard.html %}
+        <div class="row">
+            <div class="span7">
+                {% include dashboard/_member-dashboard-footer.html %}
+                {% include dashboard/_callout-container.html %}
+            </div>
+            <div class="span5">
+                {% include dashboard/_benefits.html %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include _search.html %}
+
+{% include _books.html %}
+
+{% include _communities.html %}

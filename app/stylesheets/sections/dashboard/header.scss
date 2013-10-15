@@ -1,0 +1,31 @@
+.dashboard-header {
+    padding: 0 0 30px;
+
+    h2 {
+        margin: 0;
+    }
+
+    .nav-dashboard {
+        @include clearfix;
+        float: right;
+        margin: 15px 0 0;
+
+        li {
+            display: inline-block;
+            float: right;
+            font-weight: 600;
+            padding-right: 15px;
+
+            &:first-child {
+                border-left: 1px solid $light-gray;
+                padding-left: 15px;
+                padding-right: 0;
+            }
+
+            .icon {
+                margin: 0 5px 0 0;
+                vertical-align: middle;
+            }
+        }
+    }
+}

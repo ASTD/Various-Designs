@@ -1,0 +1,56 @@
+// Grid Containers
+.container,
+.row {
+  @include clearfix;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $page-padding;
+  width: $page-width;
+
+  &.secondary {
+    width: $page-width - 100;
+  }
+}
+
+.table-grid,
+.row {
+  &.secondary {
+    padding: 0 $page-padding*2;
+  }
+}
+
+// Grid
+// ---------------------------------------
+$grid-columns: 12;
+
+@for $i from 1 through ($grid-columns) {
+  // $grid-classes: join($grid-classes, unquote(".span-#{$i}"), comma);
+  .span#{$i} {
+    @include clearfix;
+    @include span-columns($i);
+  }
+}
+
+// Table Grid
+// ---------------------------------------
+.table-grid {
+    display: table;
+    width: 100%;
+
+    .cell {
+      display: table-cell;
+    }
+}
+
+@for $i from 1 through ($grid-columns) {
+    .cell-span#{$i} {
+        @include span-columns($i, table);
+        vertical-align: top;
+    }
+}
+
+.omega {
+  margin-left: 0;
+}

@@ -1,0 +1,53 @@
+.member-footer {
+    background: $white;
+    box-shadow: 0 -15px 0 -5px $white, -1px 0 4px -1px $light-gray;
+    text-align: center;
+
+    &.regular {
+        border-bottom: 3px solid $green;
+        @include linear-gradient($white 80%, $faded-green);
+
+        .lt-ie10 & {
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#DFE7E9')";
+            position: relative;
+            z-index: -1;
+        }
+    }
+    &.plus {
+        border-bottom: 3px solid $orange;
+        @include linear-gradient($white 80%, $faded-orange);
+
+        .lt-ie10 & {
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#FBECE6')";
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+    .price-plans {
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 20px 0;
+    }
+}
+
+.membership-table-footer {
+    .cell-span4 {
+        padding: 20px 15px;
+    }
+
+    .icon-nation {
+        margin: 0 5px 0 0;
+    }
+}
+
+// @-moz-document url-prefix() {
+//     .member-footer {
+//         // border-right: 1px solid $lighter-gray;
+//         box-shadow: none;
+
+//         &.regular {
+//             // border-left: 1px solid $lighter-gray;
+//         }
+//     }
+// }

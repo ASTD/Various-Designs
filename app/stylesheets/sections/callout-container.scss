@@ -1,0 +1,25 @@
+.callout-container {
+    > section {
+        background: $lighter-cerulean;
+        border: 1px solid $cerulean;
+        border-top: 0;
+        border-radius: 0 0 5px 5px;
+        padding: 0 $page-padding*1.5;
+
+        ul {
+            @include clearfix;
+        }
+    }
+}
+
+.callout-container-header {
+    border: 1px solid $cerulean;
+    border-radius: 5px 5px 0 0;
+    @include linear-gradient(left, $light-cerulean, $cerulean);
+    padding: $page-padding $page-padding*1.5;
+
+    h2 {
+        line-height: 1;
+        margin: 0;
+    }
+}

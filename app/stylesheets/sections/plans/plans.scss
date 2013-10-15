@@ -1,0 +1,190 @@
+.plans {
+    @include clearfix;
+
+    .plan {
+        float: left;
+        width: 50%;
+    }
+}
+
+.plan-inner {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1);
+    position: relative;
+
+    .plan:first-child & {
+        border-left: 1px solid rgba(0, 0, 0, .1);
+        border-right: 0;
+    }
+
+    .joined & {
+        box-shadow: 3px 0 5px -2px rgba(0, 0, 0, .1);
+    }
+
+    .joined:first-child & {
+        box-shadow: -3px 0 5px -2px rgba(0, 0, 0, .1), 0 3px 5px -2px rgba(0, 0, 0, .1);
+
+        .plan-header {
+            &:after {
+                background: $orange;
+                bottom: 15px;
+                content: " ";
+                position: absolute;
+                right: 0;
+                top: 15px;
+                width: 1px;
+            }
+        }
+    }
+}
+
+.plan-header {
+    padding: $page-padding*3 $page-padding*4;
+    position: relative;
+    text-align: center;
+
+    &.arrow-container {
+        min-height: 311px;
+        padding: $page-padding*3 $page-padding*3 0;
+
+        .lt-ie9 & {
+            min-height: 279px;
+        }
+    }
+
+    .banner-arrow {
+        margin: 20px 0 0;
+    }
+
+    img {
+        min-height: 65px;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        margin: $page-v-rhythm 0;
+        width: 100%;
+    }
+
+    .regular & {
+        border-top: 3px solid $blue;
+        @include linear-gradient(rgba(223, 228, 231, 0.8), rgba(255, 255, 255, .8) 70%);
+
+        .lt-ie10 & {
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#DFE7E9', EndColorStr='#FFFFFF')";
+        }
+
+        hr {
+            background: $blue;
+        }
+    }
+
+    .plus & {
+        border-top: 3px solid $orange;
+        @include linear-gradient(rgba(253, 233, 230, 0.8), rgba(255, 255, 255, .8) 70%);
+        background-color: transparent;
+    
+        .lt-ie10 & {
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FBECE6', EndColorStr='#FFFFFF')";
+        }
+
+        hr {
+            background: $orange;
+        }
+    }
+
+    .plus.joined & {
+        .lt-ie10 & {
+            background: #fff;
+            filter: none;
+            -ms-filter: none;
+        }
+    }
+
+    .icon-divider-orange,
+    .icon-divider-orange-long,
+    .icon-divider-blue {
+        bottom: -7px;
+        left: 50%;
+        margin-left: -112px;
+        position: absolute;
+    }
+
+    .icon-divider-orange-long {
+        margin-left: -197px;
+    }
+}
+
+.plan-points {
+    @include linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 1) 30%);
+    padding: $page-padding*3 $page-padding*4;
+
+    .lt-ie10 & {
+        background-color: #fff;
+    }
+
+    .plus & {
+        border-bottom: 3px solid $orange;
+    }
+
+    .plus.joined & {
+        border-top: 3px solid $orange;
+        @include linear-gradient(rgba(253, 233, 230, 0.8), 
+            rgba(255, 255, 255, .8) 20%, rgba(255, 255, 255, 1));
+    }
+
+    .joined & {
+        .lt-ie10 & {
+            background: #fff;
+        }
+    }
+
+    .regular & {
+        border-bottom: 3px solid $blue;
+        color: $gray;
+
+        strong,
+        .icon {
+            @include opacity(.5);
+        }
+    }
+
+    ul {
+        font-weight: 600;
+        line-height: 1.3;
+        margin: $page-v-rhythm 0;
+
+        li {
+            display: table;
+            padding: $page-padding*1.3 0;
+        }
+    }
+
+    .label,
+    .description {
+        display: table-cell;
+    }
+
+    .label {
+        padding: 0 10px 0 0;
+    }
+
+    strong {
+        line-height: 1;
+        margin: 0 5px 0 0;
+    }
+
+    strong {
+        @include font-size(24);
+        vertical-align: middle;
+
+        .regular & {
+            color: $blue;
+        }
+
+        .plus & {
+            color: $orange;
+        }
+    }
+}

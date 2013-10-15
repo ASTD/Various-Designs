@@ -1,0 +1,54 @@
+.plan-callout {
+    padding-left: 31.76157%;
+    padding-bottom: 85px;
+    position: relative;
+
+    header {
+        font-weight: 600;
+        padding: 15px 0 20px;
+        text-align: center;
+        
+        h4 {
+            margin: 0;
+        }
+
+        .icon {
+            margin: 0 0 5px;
+        }
+    }
+}
+
+.member-categories {
+    bottom: 0;
+    height: 85px;
+    position: absolute;
+    z-index: 10;
+
+    li {
+        background: $white;
+        border: 1px solid $lighter-gray;
+        height: 85px;
+        overflow: hidden;
+        padding: 0 20px 15px;
+        @include transition(height 0.5s linear);
+
+        &:hover {
+            height: 251px;
+        }
+
+        header {
+            height: 90px;
+
+            .icon-container {
+                display: inline-block;
+                height: 23px;
+                margin: 0 0 5px;
+            }
+        }
+
+        section {
+            @include font-size(12);
+            line-height: 1.5;
+        }
+    }
+}

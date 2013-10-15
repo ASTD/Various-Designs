@@ -1,0 +1,22 @@
+#modal-join-renew {
+    width: 910px;
+
+    em {
+        display: block;
+        margin: 5px 0 0;
+    }
+
+    .cell-span4 {
+        border-left: 1px solid $lighter-gray;
+        padding: 0 20px;
+
+        &:first-child {
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}

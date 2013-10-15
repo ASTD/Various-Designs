@@ -1,0 +1,109 @@
+.icon {
+    display: inline-block;
+    @include hide-text;
+    vertical-align: middle;
+
+    &.icon-chat {
+        @include sprite($chat);
+    }
+
+    &.icon-checkmark-green {
+        @include sprite($checkmark-green);
+    }
+
+    &.icon-checkmark-green-small {
+        @include sprite($checkmark-green-small);
+    }
+
+    &.icon-checkmark-orange {
+        @include sprite($checkmark-orange);
+    }
+
+    &.icon-checkmark-orange-small {
+        @include sprite($checkmark-orange-small);
+    }
+
+    &.icon-divider-green {
+        @include sprite($divider-green);
+    }
+
+    &.icon-divider-orange {
+        @include sprite($divider-orange);
+    }
+
+    &.icon-divider-orange-long {
+        @include sprite($divider-orange-long);
+    }
+
+    &.icon-drop-shadow {
+        @include sprite($drop-shadow);
+    }
+
+    &.icon-file {
+        @include sprite($file);
+    }
+
+    &.icon-arrow-left {
+        @include sprite($icon-arrow-left);
+    }
+
+    &.icon-arrow-right {
+        @include sprite($icon-arrow-right);
+    }
+
+    &.icon-check-green {
+        @include sprite($icon-check-green);
+    }
+
+    &.icon-group {
+        @include sprite($icon-group);
+    }
+
+    &.icon-group-small {
+        @include sprite($icon-group-small);
+    }
+
+    &.icon-leaf {
+        @include sprite($icon-leaf);
+    }
+
+    &.icon-member {
+        @include sprite($icon-member);
+    }
+
+    &.icon-nation {
+        @include sprite($icon-nation);
+    }
+
+    &.icon-nation-small {
+        @include sprite($icon-nation-small);
+    }
+
+    &.icon-pdf {
+        @include sprite($icon-pdf);
+    }
+
+    &.icon-quotation-mark {
+        @include sprite($icon-quotation-mark);
+    }
+
+    &.icon-star {
+        @include sprite($icon-star);
+    }
+
+    &.icon-student {
+        @include sprite($icon-student);
+    }
+
+    &.icon-tag {
+        @include sprite($icon-tags);
+    }
+
+    &.icon-x-black {
+        @include sprite($icon-x-black);
+    }
+
+    &.icon-x-green {
+        @include sprite($icon-x-green);
+    }
+}

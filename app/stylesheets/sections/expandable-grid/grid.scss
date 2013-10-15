@@ -1,0 +1,103 @@
+.og-grid {
+    @include clearfix;
+    margin: $page-v-rhythm 0 0;
+    position: relative;
+
+    li {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 0;
+        text-align: center;
+        @include transition(padding 0.3s linear);
+        vertical-align: top;
+        width: 33%;
+
+        > a {
+            display: inline-block;
+
+            &:after {
+                border-left: 18px solid transparent;
+                border-right: 18px solid transparent;
+                border-bottom: 16px solid $white;
+                bottom: 0;
+                content: " ";
+                left: 50%;
+                margin-left: -9px;
+                @include opacity(0);
+                position: absolute;
+                @include transition(opacity 0.5s ease-in-out);
+                z-index: 11;
+
+                .lt-ie9 & {
+                    display: none;
+                }
+            }
+
+            h4 {
+                margin: 15px 0 20px;
+                text-align: left;
+            }
+        }
+
+        img {
+            border: 1px solid $light-gray;
+        }
+
+        &.active {
+            padding-bottom: 350px;
+
+            > a {
+                padding-bottom: 15px;
+                position: relative;
+
+                &:after {
+                    @include opacity(1);
+
+                    .lt-ie9 & {
+                        display: block;
+                    }
+                }
+
+                h4 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.pill-grid {
+
+    li {
+        width: auto;
+        margin-top: 10px;
+
+        &.active {
+            padding-bottom: 180px;
+
+            > a {
+                padding-bottom: 10px;
+
+                &:after {
+                    bottom: -16px;
+                }
+            }
+        }
+    }
+}
+
+.thumbnail-grid {
+    text-align: left;
+    
+    li {
+        width: 49.4%;
+
+        &.active {
+            padding-bottom: 200px;
+        }
+    }
+
+    .close-expander {
+        margin-top: -4px;
+    }
+}

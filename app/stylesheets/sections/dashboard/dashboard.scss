@@ -1,0 +1,62 @@
+.dashboard-container {
+
+    .button.full {
+        @include font-size(13);
+        padding: 7px 5px;
+    }
+
+    .callout-label {
+        color: $dark-cerulean;
+        display: block;
+        @include font-size(42);
+        margin: 0 0 5px;
+        text-align: center;
+    }
+
+}
+
+.member-dashboard {
+    background-color: transparent;
+    border-top: 3px solid $blue;
+    box-shadow: 0 3px 5px -2px $light-gray;
+    @include font-size(13);
+    @include linear-gradient(rgba(223, 231, 234, 0.8), $white);
+    padding: 30px 25px;
+
+    .lt-ie10 & {
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#DFE7E9', EndColorStr='#FFFFFF')";
+    }
+
+    ul {
+        @include list-styles;
+    }
+}
+
+.dashboard-section {
+    color: #888;
+
+    header {
+        border-bottom: 1px solid $light-gray;
+        @include clearfix;
+        color: $color-primary;
+        margin: 0 0 10px;
+        padding: 0 0 5px;
+        
+        a,
+        h4 {
+            display: inline-block;
+            margin: 0;
+        }
+
+        h4 {
+            margin-right: 5px;
+        }
+    }
+
+    .callout-label {
+        + strong {
+            display: block;
+            text-align: center;
+        }
+    }
+}

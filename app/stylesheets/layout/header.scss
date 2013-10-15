@@ -1,0 +1,47 @@
+.page-header {
+    padding: $page-v-rhythm 0;
+
+    + .section {
+        margin-top: 0;
+    }
+
+    + .section-membership {
+        margin-top: 40px;
+    }
+}
+
+.member-banner {
+    @include linear-gradient(left, $white, rgba(255, 255, 255, .7));
+    background-color: transparent;
+    margin: 0 0 $page-v-rhythm;
+    padding: $page-v-rhythm 0;
+    position: relative;
+
+    .icon-drop-shadow {
+        bottom: -10px;
+        left: 50%;
+        margin-left: -493px;
+        position: absolute;
+    }
+
+    .lt-ie10 & {
+        background-color: #fff;
+    }
+
+    a {
+        font-weight: 600;
+    }
+
+    .icon-file {
+        margin: 0 5px 0 0;
+    }
+
+    .video-container {
+        float: right;
+    }
+
+    p {
+        @include font-size(17);
+        line-height: 1.7;
+    }
+}

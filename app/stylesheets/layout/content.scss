@@ -1,0 +1,55 @@
+.page-content {
+    background-repeat: no-repeat, repeat;
+    background-position: center top, left top;
+    min-height: 470px;
+
+    .lt-ie10 & {
+        background-repeat: no-repeat;
+        background-position: center top;
+        // -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#00FFFFFF', GradientType=0)";
+    }
+
+    &.membership {
+        @include background-image(url('../images/graphics/bg-hands.png'), linear-gradient($white, rgba(255, 255, 255, 0) 400px));
+
+        .lt-ie10 & {
+            background-image: url('../images/graphics/bg-hands.png');
+        }
+    }
+
+    &.dashboard {
+        @include background-image(url('../images/graphics/bg-people.png'), linear-gradient($white, rgba(255, 255, 255, 0) 400px));
+    
+        .lt-ie10 & {
+            background-image: url('../images/graphics/bg-people.png');
+        }
+    }
+
+    &.plans {
+        @include background-image(url('../images/graphics/bg-meeting.png'), linear-gradient($white, rgba(255, 255, 255, 0) 400px));
+    
+        .lt-ie10 & {
+            background-image: url('../images/graphics/bg-meeting.png');   
+        }
+    }
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.section-banner {
+    border: 1px solid $cerulean;
+    @include linear-gradient(left, $lighter-cerulean, $light-cerulean);
+    margin: 0 0 $page-v-rhythm;
+    padding: $page-v-rhythm*1.5;
+
+    .lt-ie10 & {
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#C0E8EA', EndColorStr='#95D9DB', GradientType=1)";
+    }
+
+    h2 {
+        line-height: 1;
+        margin: 0;
+    }
+}

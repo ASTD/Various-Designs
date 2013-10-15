@@ -1,0 +1,41 @@
+---
+layout: default
+title: Become a Member
+wrapper: membership
+---
+
+<header class="page-header membership">
+    <div class="container">
+        <nav class="nav-breadcrumb">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>&gt;</li>
+                <li><a href="#">Members</a></li>
+                <li>&gt;</li>
+                <li>Become a Member</li>
+            </ul>
+        </nav>
+        <h1>Become a Member</h1>
+    </div>
+
+    {% include register/_member-banner.html %}
+
+    <div class="container">
+        <small><strong>Already a member?</strong> <a href="#">Log in now</a> to access your benefits in the ASTD Member Center.</small>
+    </div>
+</header>
+
+<section class="section section-membership">
+    <div class="container">
+        {% include register/_table-header.html %}
+        {% include register/_table.html %}
+        
+        {% include register/_plan-callout.html %}
+    </div>
+</section>
+
+{% include _add-ons.html %}
+
+{% include register/_testimonials.html %}
+
+{% include modals/_chat.html %}

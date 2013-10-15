@@ -1,0 +1,38 @@
+.alert-container {
+    background: $faded-orange;
+    border: 1px solid #f2aa93;
+    border-radius: 5px;
+    color: $orange;
+    line-height: 1.5;
+    padding: 10px;
+    position: relative;
+
+    .button.full {
+        @include font-size(14);
+        line-height: 1;
+        padding: 7px 0;
+    }
+
+    .member-dashboard & {
+        margin: 20px 0 0;
+    }
+
+    .row {
+        margin: 10px 0 0;
+    }
+
+    section {
+        padding-left: 50px;
+    }
+
+    strong {
+        @include font-size(42);
+        left: 10px;
+        line-height: 1;
+        margin: 0 10px 5px 0;
+        min-width: 50px;
+        position: absolute;
+        text-align: center;
+        top: 7px;
+    }
+}

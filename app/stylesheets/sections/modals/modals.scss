@@ -1,0 +1,79 @@
+/*
+    Overriding Colorbox Styles
+*/
+#cboxOverlay {
+    background: $black;
+    opacity: .7 !important;
+}
+
+#cboxTopLeft,
+#cboxTopCenter,
+#cboxTopRight,
+#cboxBottomLeft,
+#cboxBottomCenter,
+#cboxBottomRight,
+#cboxMiddleLeft,
+#cboxMiddleRight {
+    display: none;
+}
+
+#cboxContent {
+    background: none;
+    border-radius: 5px;
+    overflow: visible;
+    margin: $page-padding;
+}
+
+#cboxLoadedContent {
+    margin-bottom: 0;
+}
+
+#cboxClose {
+    background: none;
+    bottom: auto;
+    height: auto;
+    @include opacity(.8);
+    right: -8px;
+    text-indent: 0;
+    top: -8px;
+    width: auto;
+    
+    &:hover {
+        background-position: 0 0;
+        @include opacity(1);
+    }
+}
+
+
+/* 
+    Custom Modal Styles
+*/
+.modal {
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    @include font-size(14);
+    line-height: 1.3;
+    padding: $page-v-rhythm $page-padding*2.5;
+
+    h6 {
+        font-family: $font-stack;
+        margin: 0 0 $page-padding;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    li,
+    p {
+        @include font-size(14);
+        line-height: 1.3;
+        margin: 0 0 $page-padding*1.5;
+    }
+}
+
+.modal-header {
+    margin: 0 0 $page-v-rhythm;
+}
+
