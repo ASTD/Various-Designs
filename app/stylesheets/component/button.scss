@@ -1,5 +1,6 @@
 button,
 .button {
+    border: 0;
     border-radius: 5px;
     color: $white;
     cursor: pointer;
@@ -51,7 +52,23 @@ button,
 
     &.small {
         @include font-size(13);
-        padding: 10px 15px;
+        padding: 9px 15px;
+    }
+
+    &.light {
+        border: 1px solid #D0602D;
+        font-weight: 400;
+
+        &.secondary {
+            background: #E6E6E6;
+            border: 1px solid #DEDEDE;
+            color: #666666;
+
+            &:hover {
+                background: $light-gray;
+                text-shadow: none;
+            }
+        }
     }
 }
 

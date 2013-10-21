@@ -34,6 +34,13 @@
 
         &:hover {
             height: 251px;
+
+            header {
+                .price {
+                    position: relative;
+                    text-indent: 0;
+                }
+            }
         }
 
         header {
@@ -44,11 +51,20 @@
                 height: 23px;
                 margin: 0 0 5px;
             }
+
+            .price {
+                display: block;
+                padding: 5px 0 15px;
+                position: absolute;
+                text-indent: -9999px;
+            }
         }
 
         section {
             @include font-size(12);
             line-height: 1.5;
+            margin: $page-v-rhythm/2 0 0;
+            text-align: center;
         }
     }
 }

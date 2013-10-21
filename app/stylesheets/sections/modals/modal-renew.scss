@@ -1,0 +1,126 @@
+#modal-renew {
+    padding: 0;
+    width: 685px;
+
+    .modal-header {
+        @include clearfix;
+        margin: 0;
+        padding: $page-padding*3 $page-padding*2 $page-padding*2;
+        position: relative;
+
+        h1, h2, h3 {
+            display: inline-block;
+            float: left;
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        nav {
+            display: inline-block;
+            position: absolute;
+            bottom: -3px;
+            right: $page-padding*2;
+
+            li {
+                display: inline-block;
+                font-weight: 600;
+                margin: 0;
+                max-width: 150px;
+                vertical-align: middle;
+
+                &:first-child {
+                    padding: 0 $page-padding*1.5;
+                }
+
+                img {
+                    border-left: 1px solid #8CA7AC;
+                    line-height: 1;
+                    padding: 10px 0 15px $page-padding*1.5;
+                    margin: 0;
+                }
+            }
+        }
+
+        &.plan-regular {
+            border-bottom: 3px solid $blue;
+            @include linear-gradient($white, $faded-blue);
+
+            .lt-ie10 & {
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#DFE7E9);
+            }
+
+            nav {
+                color: $blue;
+            }
+        }
+    }
+
+    section {
+        padding: $page-padding*2.5 $page-padding*2;
+    }
+
+    label {
+        display: block;
+        padding: 0 0 0 20px;
+        position: relative;
+
+        .input-checkbox {
+            left: 0;
+            position: absolute;
+            top: 2px;
+        }
+    }
+
+    .big-points {
+        margin: 0 0 $page-v-rhythm;
+    }
+
+    .modal-slider {
+
+        > li {
+            margin: 0;
+            min-height: 160px;
+            padding: 20px 30px;
+
+            .span7 {
+                padding-left: 10px;
+            }
+
+            li {
+                margin: 0 0 5px;
+            }
+        }
+    }
+
+    .bx-wrapper {
+        .bx-next {
+            right: 0;
+        }
+        .bx-prev {
+            left: 0;
+        }
+    }
+}
+
+.subsection {
+    margin-top: $page-v-rhythm*2;
+
+    &:first-child {
+        border-bottom: 1px solid $lighter-gray;
+        margin-top: 0;
+        padding-bottom: $page-v-rhythm;
+    }
+
+    .subsection-header {
+        border-bottom: 1px solid $lighter-gray;
+        padding: 0 0 $page-padding;
+        margin: 0 0 $page-v-rhythm;
+
+        h1, h2, h3, h4 {
+            display: inline-block;
+            line-height: 1;
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+        }
+    }
+}

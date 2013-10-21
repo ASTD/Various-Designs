@@ -1,8 +1,41 @@
-Membership Designs
-==================
+# Velir ASTD - Membership
+## Front-End Code for the new membership section (desktop only) 
+======
 
-Contains the HTML, CSS and JS files for the newly designed membership pages.
+## General
 
-Plain HTML, CSS and compiled Javascript can be found in `/public`. 
+- For development files, please see `app/`.
+- For production files, please see `public/`. Do not add or edit any files in the "public" folder. They will automatically get overwritten when running grunt. Make all changes in the "app" folder.
 
-Templated HTML, SASS and original Javascript can be found under `/app`.
+## CSS / Scss
+
+#### `styles.css` includes
+- [Bourbon](http://bourbon.io/)
+- [Neat](http://neat.bourbon.io) 
+
+## JS
+
+Using jQuery v1.10.2 with jQuery Migrate v1.1.0.
+
+#### Plugins Used
+- [Flexslider](http://woothemes.com/flexslider)
+
+#### JavaScript Practices
+Vendors and Modules are concatenated into `public/javascripts/scripts.js`
+
+
+## Build
+
+Uses [Gruntjs](http://gruntjs.com/). Default task runs `watch`.
+
+### Tasks
+
+- Concat
+- Copy
+- Jekyll
+- JSHint
+- Sass
+- Smushit
+- Spritesmith
+- Watch
+- Webfont

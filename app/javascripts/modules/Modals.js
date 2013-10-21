@@ -19,7 +19,6 @@ ASTD.modals = (function ($) {
                 rowNum = $this.closest('tr').index();
 
             $this.colorbox({
-                innerHeight: 228,
                 inline: true,
                 close: '<span class="icon icon-x-black"></span>',
                 onComplete: function () {
